@@ -813,6 +813,11 @@
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
   }
+  .\*\:absolute {
+    :is(& > *) {
+      position: absolute;
+    }
+  }
   .hover\:-translate-y-2 {
     &:hover {
       @media (hover: hover) {
